@@ -9,6 +9,65 @@ body{
 .responsive-col{
   color: white;
 }
+
+/*----------------------------------------
+Navigation Styles
+----------------------------------------*/
+.sidePanel{
+  min-height: 100%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 4rem; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+.sidePanel-open{
+  width: 16rem;
+}
+.sidePanel a{
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.navigation-link:hover {
+  color: #f1f1f1;
+}
+
+.sidePanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+
+
 .carousel-watermark{
   height: 60px;
   width: auto;
@@ -24,30 +83,30 @@ Carousel Styles
 
 #myCarousel .item {	height:480px; }
 
-#slide1 {
-  background: url('../images/carousel/img-1.jpg') top center no-repeat;
-}
-#slide2 {
-  background: url('../images/carousel/img-2.jpg') top center no-repeat;
-}
-#slide3 {
-  background: url('../images/carousel/img-3.jpg') top center no-repeat;
-}
-#slide4 {
-  background: url('../images/carousel/img-4.jpg') top center no-repeat;
-}
-#slide5 {
-  background: url('../images/carousel/img-5.jpg') top center no-repeat;
-}
-#slide6 {
-  background: url('../images/carousel/img-6.jpg') top center no-repeat;
-}
-#slide7 {
-  background: url('../images/carousel/img-7.jpg') top center no-repeat;
-}
-#slide8 {
-  background: url('../images/carousel/img-8.jpg') top center no-repeat;
-}
+// #slide1 {
+//   background: url('../images/carousel/img-1.jpg') top center no-repeat;
+// }
+// #slide2 {
+//   background: url('../images/carousel/img-2.jpg') top center no-repeat;
+// }
+// #slide3 {
+//   background: url('../images/carousel/img-3.jpg') top center no-repeat;
+// }
+// #slide4 {
+//   background: url('../images/carousel/img-4.jpg') top center no-repeat;
+// }
+// #slide5 {
+//   background: url('../images/carousel/img-5.jpg') top center no-repeat;
+// }
+// #slide6 {
+//   background: url('../images/carousel/img-6.jpg') top center no-repeat;
+// }
+// #slide7 {
+//   background: url('../images/carousel/img-7.jpg') top center no-repeat;
+// }
+// #slide8 {
+//   background: url('../images/carousel/img-8.jpg') top center no-repeat;
+// }
 
 
 #logo{

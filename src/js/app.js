@@ -27,6 +27,16 @@ $(function () {
       })
       .catch(err => console.log(err));
   })
+
+  $('.openbtn').on("click", () => {
+    // console.log("clicked");
+    $(".sidePanel").toggleClass("sidePanel-open");
+  });
+
+  $('.closebtn').on("click", () => {
+    $(".sidePanel").toggleClass("sidePanel-open");
+  });
+
 });
 
 
