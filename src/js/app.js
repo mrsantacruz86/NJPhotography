@@ -20,7 +20,6 @@ $(function () {
     getGif("dog")
       .then(res => {
         const src = res.data.images.fixed_height.url;
-        // console.log(res.data.images.fixed_height.url);
         const $imgDisplay = $('<div class="img-display">');
         $imgDisplay.append($(`<img src="${src}">`))
         $("#root").append($imgDisplay);
@@ -28,13 +27,10 @@ $(function () {
       .catch(err => console.log(err));
   })
 
-  $('.openbtn').on("click", () => {
-    // console.log("clicked");
+  // Toggle sidePanel
+  $('.burgerBtn').on("click", () => {
     $(".sidePanel").toggleClass("sidePanel-open");
-  });
-
-  $('.closebtn').on("click", () => {
-    $(".sidePanel").toggleClass("sidePanel-open");
+    $(".burgerBtn").toggleClass("change");
   });
 
 });
