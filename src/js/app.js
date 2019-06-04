@@ -2,7 +2,7 @@ import '../css/main.scss';
 import jquery from 'jquery';
 window.$ = jquery;
 import { getGif } from './api';
-import "bootstrap";
+// import "bootstrap";
 
 // jQuery methods
 $(function () {
