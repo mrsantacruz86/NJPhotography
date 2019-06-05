@@ -3,30 +3,64 @@
    ------------------------*/
 body, html{
   height: 100%;
+  scroll-behavior: smooth;
 }
 
+.container{
+  margin-right: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 10rem;
+}
 .responsive-col{
   color: white;
 }
 
+
 .bgImg{
-  min-height: 100%;
-  background: url('../images/bg01.jpg') top center no-repeat;
+  height: 100%;
+  background: url('../images/bg01.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+.bgImg-2{
+  min-height: 40%;
+  background: url('../images/bg02.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
 }
 
+.titles{
+  margin: auto;
+}
 /*----------------------------------------
 Navigation Styles
 ----------------------------------------*/
-// Navigation close button
+// Navigation button
 .burgerBtn {
   display: inline-block;
   cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
   z-index: 1000;
+}
+
+
+.burgerBtn:hover > div{
+  background-color: #f1f1f1;
 }
 .btnBar1, .btnBar2, .btnBar3 {
   width: 2rem;
   height: .25rem;
-  background-color: white;
+  background-color: #888;
   margin: .5rem 0;
   transition: 0.4s;
 }
@@ -65,23 +99,6 @@ Navigation Styles
 .sidePanel a:hover {
   color: #f1f1f1;
 }
-
-// Style the button that is used to open the sidepanel
-.burgerBtn {
-  font-size: 1.5rem;
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  padding: 1rem 2rem;
-  // border: none;
-  position: absolute;
-  z-index: 1000;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
 
 
 
