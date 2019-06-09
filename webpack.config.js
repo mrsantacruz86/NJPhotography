@@ -62,10 +62,16 @@ module.exports = {
         test: /\.(png|jpe?g|svg|gif)$/,
         use: [
           {
-            loader: "url-loader",
+          //   loader: "url-loader",
+          //   options: {
+          //     name: "img/[name]_[hash:7].[ext]",
+          //     limit: 5000
+          //   }
+          // },
+          // {
+            loader: "file-loader",
             options: {
-              name: "img/[name]_[hash:7].[ext]",
-              limit: 5000
+              name: "gallery/[name].[ext]",
             }
           }
         ]

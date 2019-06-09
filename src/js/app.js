@@ -2,6 +2,7 @@ import '../css/main.scss';
 import jquery from 'jquery';
 window.$ = jquery;
 import { getGif } from './api';
+import {loadImages} from './gallery';
 // import "bootstrap";
 
 // jQuery methods
@@ -33,19 +34,11 @@ $(function () {
     $(".burgerBtn").toggleClass("change");
   });
 
+  // Load images to gallery
+  // $('#gallery').append(loadImages());
+
 });
 
 
 
-// Script to load the images
-function loadImages() {
-  var tag = "";
-  var i;
-  for (i = 1; i < 67; i++) {
-    tag += '<img src="gallery/img-' + i + '.jpg">';
-  }
-  return tag
-}
-
-// document.getElementById("gallery-1").innerHTML = loadImages();
 
